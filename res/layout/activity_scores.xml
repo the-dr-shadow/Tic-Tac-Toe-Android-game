@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="interns.tictactoe.scores">
+
+
+    <TextView
+        android:id="@+id/tvscores"
+        android:layout_width="wrap_content"
+        android:paddingLeft="100sp"
+        android:layout_height="wrap_content"
+        android:text="SCORES"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textDirection="firstStrong"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvtotalmatches"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvscores"
+        android:text="Total Matches :"
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/totalmatchcount"
+        android:layout_width="1in"
+        android:paddingTop="30dp"
+        android:paddingLeft="1in"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvtotalmatches"
+        android:layout_below="@+id/tvscores"/>
+
+    <TextView
+        android:id="@+id/tvmatcheswin"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvtotalmatches"
+        android:text="Matches Win :"
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/wincount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvmatcheswin"
+        android:layout_below="@+id/totalmatchcount"
+        android:paddingTop="30dp"
+        android:paddingLeft="1in"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tvmatcheslost"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvmatcheswin"
+        android:text="Matches Lost :"
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/losscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvmatcheswin"
+        android:layout_below="@+id/wincount"
+        android:paddingTop="30dp"
+        android:paddingLeft="1in"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tvmatchesdraw"
+        android:layout_width="1in"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvmatcheslost"
+        android:text="Matches Draw :"
+        android:paddingTop="30dp"
+        android:textSize="20dp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/drawcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tvmatchesdraw"
+        android:layout_below="@+id/losscount"
+        android:paddingTop="30dp"
+        android:paddingLeft="1in"
+        android:textSize="20dp"
+        android:textColor="#000000"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

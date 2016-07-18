@@ -1,0 +1,88 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:background="@drawable/main1">
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="1sp"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textSize="60dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"
+        android:textDirection="firstStrong"
+        android:textStyle="bold|italic"/>
+
+    <Button
+        android:id="@+id/singleplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player VS Computer"
+        android:textSize="20dp"
+        android:paddingTop="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/textview2"
+        android:background="@android:color/transparent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/twoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/singleplayer"
+        android:text="Player VS Player"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/score"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twoplayer"
+        android:text="Score"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/demo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:text="Demo"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/demo"
+        android:text="Exit"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+</RelativeLayout>
